@@ -1,7 +1,7 @@
-import {RouterModule, Routes} from '@angular/router';
 import {SquarePage} from './pages/square-page/square-page';
 import {TrianglePage} from './pages/triangle-page/triangle-page';
-import {NgModule} from "@angular/core";
+import {RouterModule, Routes} from '@angular/router';
+import {NgModule} from '@angular/core';
 
 export const FIGURES_ROUTES: Routes = [
   { path: 'square', component: SquarePage },
@@ -10,7 +10,7 @@ export const FIGURES_ROUTES: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(FIGURES_ROUTES, {useHash: true})],
+  imports: [RouterModule.forRoot(FIGURES_ROUTES, { useHash: true })],
   exports: [RouterModule]
 })
 export class FigureRoutingModule {}
