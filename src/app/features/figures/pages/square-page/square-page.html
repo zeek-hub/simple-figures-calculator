@@ -1,0 +1,14 @@
+<div class="main vw-100 vh-100 bg-dark d-flex justify-content-center align-items-center text-white position-relative">
+  <nav class="position-absolute top-0 w-100 d-flex p-3">
+    <p class="title p-2 fw-semibold">Rectangle Page</p>
+    <a class="m-2 text-white" routerLink="/triangle" [style.text-decoration]="'none'">Go to Triangle Page</a>
+  </nav>
+  <div class="square-container p-3 shadow-lg d-flex flex-column align-items-center">
+    <main class="w-100">
+      <app-square-form (onSubmit)="onSubmit($event)"/>
+    </main>
+    <footer>
+      <app-square-figure [rectangle]="rectangle"/>
+    </footer>
+  </div>
+</div>

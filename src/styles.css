@@ -1,1 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  font-family: Smooch Sans;
+}
+.my-input{
+  border: 1px solid #333333;
+  outline: none;
+  background-image:
+    linear-gradient(45deg, transparent 48%, rgba(198, 198, 198, 0.04) 48%, rgba(221, 221, 221, 0.03) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(198, 198, 198, 0.04) 48%, rgba(221, 221, 221, 0.03) 52%, transparent 52%);
+  background-size: 10px 10px;
+  transition: all .2s ease-in-out;
+}
+.my-input:hover{
+  background-image:
+    linear-gradient(45deg, transparent 48%, rgba(198, 198, 198, 0.1) 48%, rgba(221, 221, 221, 0.1) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(198, 198, 198, 0.1) 48%, rgba(221, 221, 221, 0.1) 52%, transparent 52%);
+  background-size: 10px 10px;
+  border: 1px solid #ff8000;
+}
+.my-input:focus{
+  background-image:
+    linear-gradient(45deg, transparent 48%, rgba(198, 198, 198, 0.1) 48%, rgba(221, 221, 221, 0.1) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(198, 198, 198, 0.1) 48%, rgba(221, 221, 221, 0.1) 52%, transparent 52%);
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  50%{
+    border: 1px solid #ff8000;
+  }100%{
+    border: 1px solid #333333;
+  }
+}
+.canvas-styles{
+  color: black;
+  border: 1px solid #3e3e3e;
+  padding: 12px 24px;
+  position: relative;
+  background-image:
+    linear-gradient(45deg, transparent 48%, rgba(198, 198, 198, 0.04) 48%, rgba(221, 221, 221, 0.03) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(198, 198, 198, 0.04) 48%, rgba(221, 221, 221, 0.03) 52%, transparent 52%);
+  background-size: 10px 10px;
+  overflow: hidden;
+  transition: .2s ease-in-out;
+}
+.canvas-styles:hover{
+  border: 1px solid #ff8000;
+  background: rgba(255, 115, 0, 0.05);
+  background-image:
+    linear-gradient(45deg, transparent 48%, rgba(198, 198, 198, 0.04) 48%, rgba(221, 221, 221, 0.03) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(198, 198, 198, 0.04) 48%, rgba(221, 221, 221, 0.03) 52%, transparent 52%);
+  background-size: 10px 10px;
+}
+.btn-calculate {
+  color: black;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 12px 24px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.btn-calculate::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(45deg, transparent 48%, #c6c6c6 48%, #ddd 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, #c6c6c6 48%, #ddd 52%, transparent 52%);
+  background-size: 10px 10px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: 0;
+}
+.btn-calculate:hover span {
+  animation: textScrambleBlur 1.5s normal;
+}
+.btn-calculate:hover::before {
+  opacity: 1;
+}
+.btn-calculate span {
+  position: relative;
+  z-index: 1;
+}
+@keyframes textScrambleBlur {
+  10%{
+    filter: blur(1px);
+  }
+  100%{
+    filter: blur(none);
+  }
+}
+.title{
+  color: black;
+  background: #ff7300;
+}
+.main{
+  background-image:
+    linear-gradient(45deg, transparent 48%, rgba(255, 115, 0, 0.05) 48%, rgba(255, 115, 0, 0.05) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255, 115, 0, 0.05) 48%, rgba(255, 115, 0, 0.05) 52%, transparent 52%);
+  background-size: 10px 10px;
+}
