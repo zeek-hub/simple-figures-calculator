@@ -1,8 +1,0 @@
-.triangle-container{
-  border: 1px solid #434343;
-  transition: .2s ease-in-out;
-}
-.triangle-container:hover{
-  border: 1px solid #ff8000;
-  transform: scale(1.02);
-}
