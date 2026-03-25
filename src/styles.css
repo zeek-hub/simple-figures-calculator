@@ -99,3 +99,8 @@
     linear-gradient(-45deg, transparent 48%, rgba(255, 115, 0, 0.05) 48%, rgba(255, 115, 0, 0.05) 52%, transparent 52%);
   background-size: 10px 10px;
 }
+@media (max-width: 600px){
+  canvas{
+    width: 250px;
+  }
+}
