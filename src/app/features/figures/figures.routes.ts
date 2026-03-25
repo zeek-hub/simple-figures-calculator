@@ -1,6 +1,6 @@
 import {RouterModule, Routes} from '@angular/router';
-import {SquarePage} from './figures/pages/square-page/square-page';
-import {TrianglePage} from './figures/pages/triangle-page/triangle-page';
+import {SquarePage} from './pages/square-page/square-page';
+import {TrianglePage} from './pages/triangle-page/triangle-page';
 import {NgModule} from "@angular/core";
 
 export const FIGURES_ROUTES: Routes = [
