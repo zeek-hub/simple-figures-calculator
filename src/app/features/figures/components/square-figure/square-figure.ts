@@ -21,7 +21,7 @@ export class SquareFigure implements AfterViewInit, OnChanges, OnDestroy {
   @Input() public rectangle!: Rectangle;
   @ViewChild('rectangleCanvas') myCanvas!: ElementRef<HTMLCanvasElement>;
   private intervalId?: any;
-  private readonly chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
+  private readonly chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
   public areaText!: string;
 
   constructor(private cdf: ChangeDetectorRef) {}

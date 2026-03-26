@@ -1,7 +1,13 @@
 *{
   font-family: Smooch Sans;
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .my-input{
+  background-color: #090909;
   border: 1px solid #333333;
   outline: none;
   background-image:
@@ -31,6 +37,7 @@
   }
 }
 .canvas-styles{
+  background-color: #090909;
   color: black;
   border: 1px solid #3e3e3e;
   padding: 12px 24px;
@@ -94,8 +101,18 @@
   background: #ff7300;
 }
 .main{
-  background-image: radial-gradient(circle, rgba(255, 115, 0, 0.06) 40%, transparent 41%);
+  background: rgba(0, 0, 0, 0.96);
+  background-image: radial-gradient(circle, rgba(85, 85, 85, 0.06) 40%, transparent 41%);
   background-size: 4px 4px;
+  overflow: hidden;
+}
+.btn-router-link {
+  color: whitesmoke;
+  background: black;
+}
+.btn-router-link::before {
+  background-image: radial-gradient(circle, rgba(198, 198, 198, 0.18) 40%, transparent 41%);
+  background-size: 3px 3px;
 }
 @media (max-width: 600px){
   canvas{

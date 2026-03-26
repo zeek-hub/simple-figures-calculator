@@ -15,7 +15,7 @@ export class SquareForm implements OnInit, OnDestroy, AfterViewInit {
   public texts: string[] = ["Side A:", "Side B:"];
   private buttonIntervalId?: any;
   private paragraphIntervalIds?: any[] = [];
-  private readonly chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
+  private readonly chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
   public triangle!: FormGroup;
   public buttonText: string = 'Calculate';
   public rectangle!: FormGroup;

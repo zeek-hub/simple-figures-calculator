@@ -17,7 +17,7 @@ export class TriangleForm implements OnInit, OnDestroy {
   @Output() onSubmit = new EventEmitter<Triangle>();
   private buttonIntervalId?: any;
   private paragraphIntervalIds?: any[] = [];
-  private readonly chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
+  private readonly chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
   public texts: string[] = ["Base:", "Height:"];
   public triangle!: FormGroup;
   public buttonText: string = 'Calculate';

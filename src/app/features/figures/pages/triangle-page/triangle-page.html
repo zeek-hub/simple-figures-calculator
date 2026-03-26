@@ -1,7 +1,11 @@
-<div class="main vw-100 vh-100 bg-dark d-flex justify-content-center align-items-center text-white position-relative">
-  <nav class="position-absolute top-0 w-100 d-flex p-3">
-    <p class="title p-2 fw-semibold">Triangle Page</p>
-    <a class="m-2 text-white" routerLink="/square" [style.text-decoration]="'none'">Go to Rectangle Page</a>
+<div class="main vw-100 vh-100 d-flex justify-content-center align-items-center text-white position-relative">
+  <nav class="position-absolute top-0 w-100 d-flex align-items-center p-3">
+    <p class="title p-2 m-2 fw-semibold">Triangle Page</p>
+    <button class="btn-calculate btn-router-link p-2 small" routerLink="/square" (mouseenter)="textScramble('Go to Rectangle Page')">
+      <span>
+        {{ buttonText }}
+      </span>
+    </button>
   </nav>
   <div class="triangle-container p-3 shadow-lg d-flex flex-column align-items-center">
     <main class="w-100">
