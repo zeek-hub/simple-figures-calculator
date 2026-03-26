@@ -94,10 +94,8 @@
   background: #ff7300;
 }
 .main{
-  background-image:
-    linear-gradient(45deg, transparent 48%, rgba(255, 115, 0, 0.05) 48%, rgba(255, 115, 0, 0.05) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, rgba(255, 115, 0, 0.05) 48%, rgba(255, 115, 0, 0.05) 52%, transparent 52%);
-  background-size: 10px 10px;
+  background-image: radial-gradient(circle, rgba(255, 115, 0, 0.06) 40%, transparent 41%);
+  background-size: 4px 4px;
 }
 @media (max-width: 600px){
   canvas{
